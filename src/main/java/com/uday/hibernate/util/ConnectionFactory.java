@@ -6,7 +6,9 @@ import org.hibernate.cfg.Configuration;
 public class ConnectionFactory {
 
     public static SessionFactory getSessionFactory() {
-        SessionFactory sf=new Configuration().configure("hibernate-cfg.xml").buildSessionFactory();
+        SessionFactory sf=new Configuration()
+                .configure("hibernate-cfg.xml")
+                .buildSessionFactory();
         return sf;
     }
 }

@@ -19,5 +19,6 @@ public class Application {
         session.beginTransaction();
         session.save(accountType);
         session.close();
+        System.out.println("completed insertion");
     }
 }

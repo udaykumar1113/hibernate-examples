@@ -14,6 +14,8 @@
         <property name="hbm2ddl.auto">update</property>
         <property name="connection.pool_size">50</property>
         <property name="current_session_context_class">thread</property>
+        <property name="connection.autocommit">true</property>
         <mapping class="com.uday.hibernate.entities.AccountType"/>
+        <mapping class="com.uday.hibernate.entities.TemporalDateTime"/>
     </session-factory>
 </hibernate-configuration>
