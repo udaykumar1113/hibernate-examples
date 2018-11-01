@@ -1,6 +1,8 @@
 package com.uday.hibernate.entities;
 
 
+import org.hibernate.annotations.Formula;
+
 import javax.persistence.*;
 import java.sql.Time;
 import java.sql.Timestamp;
@@ -33,6 +35,17 @@ public class TemporalDateTime {
     private java.sql.Timestamp sqlDateTime;
 
     private java.sql.Timestamp sqlTimestamp;
+
+    @Formula("(select dt.sqlTime from Date_Time dt where dt.timeDateId=1)")
+    private Date firstIdDate;
+
+    public Date getFirstIdDate() {
+        return firstIdDate;
+    }
+
+    public void setFirstIdDate(Date firstIdDate) {
+        this.firstIdDate = firstIdDate;
+    }
 
     public int getTimeDateId() {
         return timeDateId;
