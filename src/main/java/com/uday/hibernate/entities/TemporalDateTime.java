@@ -39,6 +39,17 @@ public class TemporalDateTime {
     @Formula("(select dt.sqlTime from Date_Time dt where dt.timeDateId=1)")
     private Date firstIdDate;
 
+    /*@Formula("(select max(di.timeDateId) from Date_Time di)")
+    private int lastVal;
+
+    public int getLastVal() {
+        return lastVal;
+    }
+
+    public void setLastVal(int lastVal) {
+        this.lastVal = lastVal;
+    }*/
+
     public Date getFirstIdDate() {
         return firstIdDate;
     }

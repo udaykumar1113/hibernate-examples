@@ -17,5 +17,6 @@
         <property name="connection.autocommit">true</property>
         <mapping class="com.uday.hibernate.entities.AccountType"/>
         <mapping class="com.uday.hibernate.entities.TemporalDateTime"/>
+        <mapping class="com.uday.hibernate.entities.Song"/>
     </session-factory>
 </hibernate-configuration>
