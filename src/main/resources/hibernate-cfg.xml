@@ -18,5 +18,6 @@
         <mapping class="com.uday.hibernate.entities.AccountType"/>
         <mapping class="com.uday.hibernate.entities.TemporalDateTime"/>
         <mapping class="com.uday.hibernate.entities.Song"/>
+        <mapping class="com.uday.hibernate.entities.User"/>
     </session-factory>
 </hibernate-configuration>

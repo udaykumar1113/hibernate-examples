@@ -15,11 +15,6 @@ public class SongIdGenerator implements IdentifierGenerator {
     private static int identifier=0;
     public Serializable generate(SharedSessionContractImplementor sharedSessionContractImplementor, Object o) throws HibernateException {
 
-        /*SessionFactory sessionFactory= ConnectionFactory.getSessionFactory();
-        Session session=sessionFactory.openSession();
-        session.beginTransaction();
-        TemporalDateTime temporalDateTime =session.get(TemporalDateTime.class,1);
-        int nextVal=temporalDateTime.getLastVal();*/
         return "PRS"+1;
     }
 }

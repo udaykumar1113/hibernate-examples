@@ -13,7 +13,8 @@ import java.io.Serializable;
 public class Song implements Serializable {
 
     @Id
-    @GenericGenerator(name="CUSTOM_ID",strategy = "com.uday.hibernate.service.SongIdGenerator")
+    @GenericGenerator(name="CUSTOM_ID",
+            strategy = "com.uday.hibernate.service.SongIdGenerator")
     @GeneratedValue(generator="CUSTOM_ID")
     private String songId;
     private String songName;
