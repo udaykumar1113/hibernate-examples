@@ -19,5 +19,6 @@
         <mapping class="com.uday.hibernate.entities.TemporalDateTime"/>
         <mapping class="com.uday.hibernate.entities.Song"/>
         <mapping class="com.uday.hibernate.entities.User"/>
+        <mapping class="com.uday.hibernate.entities.UserCompositeCollection"/>
     </session-factory>
 </hibernate-configuration>
