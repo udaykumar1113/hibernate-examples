@@ -21,5 +21,6 @@
         <mapping class="com.uday.hibernate.entities.User"/>
         <mapping class="com.uday.hibernate.entities.UserCompositeCollection"/>
         <mapping class="com.uday.hibernate.entities.Bank"/>
+        <mapping class="com.uday.hibernate.entities.Customer"/>
     </session-factory>
 </hibernate-configuration>
