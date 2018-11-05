@@ -20,5 +20,6 @@
         <mapping class="com.uday.hibernate.entities.Song"/>
         <mapping class="com.uday.hibernate.entities.User"/>
         <mapping class="com.uday.hibernate.entities.UserCompositeCollection"/>
+        <mapping class="com.uday.hibernate.entities.Bank"/>
     </session-factory>
 </hibernate-configuration>
